@@ -1,3 +1,20 @@
+Future me:
+
+This is my 2018 portfolio site. Since I have a job now at Cognizant Accelerator and I can not show the awesome projects
+that I am working on, I need to change my "portfolio" site.
+
+This is a WIP.
+
+To run this:
+`yarn start`
+
+Have fun (: 
+
+
+
+=================================== DOCS CREATE REACT APP =============================================
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
