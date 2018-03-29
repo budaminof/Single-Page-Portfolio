@@ -1,7 +1,6 @@
 Future me:
 
-This is my 2018 portfolio site. Since I have a job now at Cognizant Accelerator and I can not show the awesome projects
-that I am working on, I need to change my "portfolio" site.
+This is my 2018 portfolio site. Since I have a job now at Cognizant Accelerator and I can not show the awesome projects that I am working on, I need to update my "portfolio" site.
 
 This is a WIP.
 
