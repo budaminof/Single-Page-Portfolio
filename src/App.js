@@ -33,21 +33,21 @@ class App extends Component {
           >
             · I love all things JS: React, Redux, Node.js and Express.js;
           <Typist.Delay ms={200} /> 
-            <br />
-            <br className="mobile"/>
+            <br key="1"/>
+            <br key="2" className="mobile"/>
             · On my free time I build Ethereum applications and talk blockchain;
           <Typist.Delay ms={200} />
-            <br />
-            <br className="mobile"/>
+            <br key="3"/>
+            <br key="4" className="mobile"/>
             · I can jump right into an Angu<Typist.Delay ms={200} />alr
           <Typist.Backspace count={3} delay={300} />
           <Typist.Delay ms={300} />
             lar project and work on Postgres DB;
           <Typist.Delay ms={200} />
-            <br />
-            <br className="mobile"/>
+            <br key="5"/>
+            <br key="6"className="mobile"/>
             · Talk to me about code, music and surf.
-            <br className="mobile"/>
+            <br key="7" className="mobile"/>
 
             <div className="image-wrapper">
               <Typist.Delay ms={200} />
