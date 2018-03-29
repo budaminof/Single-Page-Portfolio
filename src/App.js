@@ -22,7 +22,7 @@ class App extends Component {
 
           <div>
              <Typist
-                cursor={{ 
+                cursor={{
                   hideWhenDone: true,
                   blink: true,
                  }}
@@ -39,7 +39,7 @@ class App extends Component {
                 <br />
                 · I can jump right into an Angu<Typist.Delay ms={200} />alr
               <Typist.Backspace count={3} delay={300} />
-                <Typist.Delay ms={300} />
+              <Typist.Delay ms={300} />
                 lar project and work on Postgres DB;
               <Typist.Delay ms={200} />
                 <br />
