@@ -1,28 +1,47 @@
 .App {
-  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  font-size: 25px;
+  color: #1b1b1b;
+  width: 50%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.header {
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+  padding-bottom: 50px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+img {
+  height: 32px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.image-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-top: 100px;
 }
 
-.App-intro {
-  font-size: large;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@media only screen and (max-width: 1320px) {
+  .App {
+    width: 90%;
+    font-size: 24px;
+  }
+  .header {
+    font-size: 50px;
+  }
+  .image-wrapper {
+    width: 50%;
+  }
+
 }
