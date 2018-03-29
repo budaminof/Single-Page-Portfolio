@@ -24,7 +24,7 @@ img {
 .image-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 25%;
   margin-top: 100px;
   margin-left: 20px;
 }
@@ -44,6 +44,10 @@ img:hover {
 
 }
 
+.mobile {
+  display: none;
+}
+
  /* ======================= TABLET MEDIA QUERY ========================= */
 @media only screen and (max-width: 1320px) {
   .App {
@@ -54,7 +58,7 @@ img:hover {
     font-size: 70px;
   }
   .image-wrapper {
-    width: 30%;
+    /* width: 30%; */
     margin-left: 0px;
   }
 
@@ -63,11 +67,15 @@ img:hover {
 /* ======================= MOBILE MEDIA QUERY ========================= */
 
 @media only screen and (max-width: 640px) {
+  .mobile {
+    display: inline-block;
+  }
+
    .header {
     padding-bottom: 10px;
   }
   .image-wrapper {
-    width: 50%;
+    width: 40%;
     margin-top: 30px;
     margin-left: 0px;
   }
