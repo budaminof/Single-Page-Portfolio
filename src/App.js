@@ -49,9 +49,7 @@ class App extends Component {
 
                 <div className="image-wrapper">
                   <Typist.Delay ms={200} />
-                  <a href="mailto:budaminof@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer">
+                  <a href="mailto:budaminof@gmail.com">
                     <img src={email} alt="email-icon"></img></a>
 
                   <Typist.Delay ms={300} />

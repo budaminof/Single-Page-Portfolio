@@ -1,7 +1,7 @@
 .App {
   font-family: 'Dosis', sans-serif;
   font-size: 25px;
-  color: #1b1b1b;
+  color: rgb(27, 27, 27);
   width: 50%;
   height: 100vh;
   margin: 0 auto;
@@ -18,6 +18,7 @@
 
 img {
   height: 32px;
+  transition: ease all .3s;
 }
 
 .image-wrapper {
@@ -30,6 +31,16 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+img:hover {
+  -webkit-mask-filter: rgb(0, 255, 255);
+  -moz-mask-filter: rgb(0, 255, 255);
+  filter: drop-shadow(10px 10px 15px rgb(0, 255, 255)) invert(25%);
+  -webkit-transition: ease all .3s;
+  -moz-transition: ease all .3s;
+  transition: ease all .3s;
+
 }
 
 @media only screen and (max-width: 1320px) {
