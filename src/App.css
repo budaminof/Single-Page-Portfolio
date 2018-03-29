@@ -47,6 +47,13 @@ img:hover {
   display: none;
 }
 
+::selection {
+  background: rgb(0, 255, 208);
+}
+::-moz-selection {
+  background: rgb(0, 255, 208);
+}
+
  /* ======================= TABLET MEDIA QUERY ========================= */
 @media only screen and (max-width: 1320px) {
   .App {
