@@ -12,10 +12,10 @@ class App extends Component {
   render() {
 
     console.log("=====================================");
-    console.log("I am so happy to see you here!")
-    console.log("Let's play with an Ethereum contract. Do you have MetaMask installed?");
+    console.log("I am so happy to see you here!");
+    console.log("I am working on an Ethereum contract for us to play with");
+    console.log("but for now – make sure you have MetaMask installed");
     console.log("https://metamask.io/");
-    console.log("My contract is currently a work in progress but I will deploy it very soon.");
     console.log("=====================================");
 
     return (
@@ -23,7 +23,7 @@ class App extends Component {
 
         <div>
           <Typist
-            key={2}
+            key={1}
             cursor={{ 
               hideWhenDone: true, 
               show: false }}
@@ -32,55 +32,52 @@ class App extends Component {
             BUD AMINOF
           </Typist>
           <Typist
-            key={3}
+            key={2}
             cursor={{
               hideWhenDone: true,
               blink: true,
               }}
             startDelay={200}
             avgTypingDelay={25}
+            className="main"
           >
             · I love all things JS: React, Redux, Node.js and Express.js;
-          <Typist.Delay ms={200} key={4} /> 
-            <br key={5}/>
-            <br key={6} className="mobile"/>
+          <Typist.Delay ms={200}/> 
+            <br />
             · On my free time I build Ethereum applications and talk blockchain;
-          <Typist.Delay ms={200} key={7} />
-            <br key={8}/>
-            <br key={9} className="mobile"/>
+          <Typist.Delay ms={200} />
+            <br />
             · I can jump right into an Angu<Typist.Delay ms={200} />alr
-          <Typist.Backspace count={3} delay={300} key={10} />
-            <Typist.Delay ms={300} key={11} />
+          <Typist.Backspace count={3} delay={300} />
+            <Typist.Delay ms={300} />
             lar project and work with Postgres DB;
-          <Typist.Delay ms={200} key={12} />
-            <br key={13}/>
-            <br key={14} className="mobile"/>
+          <Typist.Delay ms={200} />
+            <br />
             · Talk to me about code, music and surf.
-            <br key={15} className="mobile"/>
 
-            <div className="image-wrapper" key={16}>
-              <Typist.Delay ms={200} key={17} />
+            <div className="image-wrapper" >
+              <Typist.Delay ms={200} />
               <a href="mailto:budaminof@gmail.com">
                 <img src={email} alt="email-icon"></img></a>
             
-            <Typist.Delay ms={200} key={19} />
+            <Typist.Delay ms={200} />
             <a target="_blank"
               rel="noopener noreferrer"
               href="https://twitter.com/bud_aminof">
               <img src={twitter} alt="twitter-icon"></img></a>
 
-              <Typist.Delay ms={300} key={18}/>
+              <Typist.Delay ms={300} />
               <a target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/budaminof/">
                 <img src={linkedin} alt="linkedin-icon"></img></a>
               
-              <Typist.Delay ms={300} key={20} />
+              <Typist.Delay ms={300} />
               <a target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/budaminof">
                 <img src={github} alt="github-icon"></img></a>
-              <Typist.Delay ms={100} key={21} />
+              <Typist.Delay ms={100} />
             </div>
 
           </Typist>

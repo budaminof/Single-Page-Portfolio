@@ -65,16 +65,20 @@ img:hover {
   .image-wrapper {
     margin-left: 0px;
   }
+  .arrow {
+    display: none;
+  }
 
 }
 
 /* ======================= MOBILE MEDIA QUERY ========================= */
 
 @media only screen and (max-width: 640px) {
-  .mobile {
-    display: inline-block;
-  }
-
+  br {
+      display: block;
+      line-height: 2;
+      margin-top: 10px;
+    }
    .header {
     padding-bottom: 10px;
   }
@@ -82,9 +86,6 @@ img:hover {
     width: 60%;
     margin-top: 30px;
     margin-left: 0px;
-  }
-  .arrow {
-    display: none;
   }
 }
 
