@@ -83,8 +83,11 @@ class App extends Component {
           </Typist>
 
         </div>
-        <div className="arrow bounce" key={22}>
+        <div className="arrow bounce">
               <img src={arrow} alt="arrow pointing down" className="arrow-img" key={23}></img>
+        </div>
+        <div className="dev-tools">
+          <p>Open developer tools to interact with my Etheruem contract</p>
         </div>
       </div>
     );
