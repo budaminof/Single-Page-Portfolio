@@ -157,8 +157,8 @@ img:hover {
  /* =============================== BACKGROUND ANIMATION ==================== */
 
  body {
-	background: linear-gradient(-45deg, rgb(238, 119, 82), rgb(231, 60, 126), rgb(35, 166, 213), rgb(35, 213, 171));
-	background-size: 400% 400%;
+	background: linear-gradient(-45deg, #70e1f5, #ffd194);
+	background-size: 200% 200%;
 	-webkit-animation: Gradient 12s ease;
 	-moz-animation: Gradient 12s ease;
   animation: Gradient 12s ease;
