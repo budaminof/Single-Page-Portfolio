@@ -52,10 +52,10 @@ img:hover {
 }
 
 ::selection {
-  background: rgb(230, 238, 82);
+  background: rgba(106, 106, 179, 0.591);
 }
 ::-moz-selection {
-  background: rgb(230, 238, 82);
+  background: rgba(106, 106, 179, 0.591);
 }
 
 /* ======================== ARROW ================== */
