@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  position: relative;
 }
 
 .header {
@@ -44,8 +45,8 @@ img:hover {
 
 .dev-tools {
   font-family: 'Dosis', sans-serif;
-  position: absolute;
-  right: 60px;
+  position: fixed;
+  right: 30px;
   bottom: 0px;
   font-size: 16px;
 }
@@ -59,9 +60,9 @@ img:hover {
 
 /* ======================== ARROW ================== */
 .arrow {
-  position: absolute;
+  position: fixed;
   bottom: 30px;
-  right: 50px;
+  right: 30px;
 }
 .arrow-img {
   transform: rotate(-90deg);
@@ -123,24 +124,30 @@ img:hover {
 
 @media only screen and (max-width: 640px) {
   br {
-      display: block;
-      line-height: 2;
-      margin-top: 10px;
+    display: block;
+    margin: 2.5em;
+    font-size: 24%;
+    content: "";
     }
-   .header {
-    padding-bottom: 10px;
+
+  .header {
+    padding-bottom: 5vh;
   }
+
   .image-wrapper {
     width: 60%;
-    margin-top: 30px;
+    margin-top: 5vh;
     margin-left: 0px;
   }
-  .arrow {
-    right: 10px;
 
+  .arrow {
+    position: absolute;
+    right: 0px;
   }
+
   .dev-tools {
-    right: 10px;
+    position: absolute;
+    right: 0px;
     bottom: 0px;
     font-size: 14px;
   }
