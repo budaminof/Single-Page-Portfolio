@@ -59,7 +59,7 @@ img:hover {
 }
 
 /* ======================== ARROW ================== */
-.arrow {
+/* .arrow {
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -103,7 +103,7 @@ img:hover {
     visibility: visible;
     opacity: 1;
   }
-}
+} */
 
  /* ======================= TABLET MEDIA QUERY ========================= */
 @media only screen and (max-width: 1320px) {
@@ -153,6 +153,17 @@ img:hover {
   }
 }
 
+/* ======================= TINY MOBILE SCREENS ============================ */ 
+
+@media only screen and (max-width: 320px) { 
+  .header {
+    font-size: 60px;
+  }
+
+  .App {
+    font-size: 20px;
+  }
+}
 
  /* =============================== BACKGROUND ANIMATION ==================== */
 

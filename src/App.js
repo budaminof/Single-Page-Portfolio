@@ -4,7 +4,7 @@ import email from './images/email.png';
 import linkedin from './images/linkedin.png';
 import twitter from './images/twitter.png';
 import github from './images/github.png';
-import arrow from './images/arrow.png';
+// import arrow from './images/arrow.png';
 import './App.css';
 
 class App extends Component {
@@ -83,9 +83,9 @@ class App extends Component {
           </Typist>
 
         </div>
-        <div className="arrow bounce">
+        {/* <div className="arrow bounce">
               <img src={arrow} alt="arrow pointing down" className="arrow-img" key={23}></img>
-        </div>
+        </div> */}
         <div className="dev-tools">
           <p>Open developer tools to interact with my Etheruem contract</p>
         </div>
