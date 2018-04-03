@@ -7,6 +7,11 @@ This is a WIP.
 This is a one page using creat-react-app.
 
 To run this:
+
 `yarn start`
+
+And here is it live: 
+[budaminof.com](https://budaminof.com/)
+
 
 Have fun (: 
