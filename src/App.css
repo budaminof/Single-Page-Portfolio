@@ -43,13 +43,13 @@ img:hover {
 
 }
 
-.dev-tools {
+/* .dev-tools {
   font-family: 'Dosis', sans-serif;
   position: fixed;
   right: 30px;
   bottom: 0px;
   font-size: 16px;
-}
+} */
 
 ::selection {
   background: rgba(106, 106, 179, 0.591);
@@ -145,12 +145,12 @@ img:hover {
     right: 0px;
   }
 
-  .dev-tools {
+  /* .dev-tools {
     position: absolute;
     right: 0px;
     bottom: 0px;
     font-size: 14px;
-  }
+  } */
 }
 
 /* ======================= TINY MOBILE SCREENS ============================ */ 
