@@ -10,6 +10,14 @@ To run this:
 
 `yarn start`
 
+Top deploy: 
+
+`yarn deploy`
+
+or :
+
+`firebase deploy`
+
 And here is it live: 
 [budaminof.com](https://budaminof.com/)
 
