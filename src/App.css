@@ -1,3 +1,7 @@
+body {
+  background: rgb(250, 250, 250);
+}
+
 .App {
   font-family: 'Dosis', sans-serif;
   font-size: 25px;
@@ -11,10 +15,15 @@
   position: relative;
 }
 
+.content {
+  z-index: 100;
+}
+
 .header {
   font-family: 'Oswald', sans-serif;
   font-size: 100px;
   padding-bottom: 50px;
+  white-space: nowrap;
 }
 
 img {
@@ -36,20 +45,12 @@ a {
 }
 
 img:hover {
-  filter: invert(25%);
+  filter: invert(35%);
   -webkit-transition: ease all .5s;
   -moz-transition: ease all .5s;
   transition: ease all .5s;
 
 }
-
-/* .dev-tools {
-  font-family: 'Dosis', sans-serif;
-  position: fixed;
-  right: 30px;
-  bottom: 0px;
-  font-size: 16px;
-} */
 
 ::selection {
   background: rgba(106, 106, 179, 0.591);
@@ -58,55 +59,8 @@ img:hover {
   background: rgba(106, 106, 179, 0.591);
 }
 
-/* ======================== ARROW ================== */
-/* .arrow {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-}
-.arrow-img {
-  transform: rotate(-90deg);
-}
-.bounce {
-  animation: bounce 2s;
-  animation-delay: 10s;
-  animation-iteration-count: 10;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
-}
-
-.dev-tools, .arrow {
-  animation: 10s fadeIn;
-  animation-fill-mode: forwards;
-  visibility: hidden;
-}
-
-@keyframes fadeIn {
-  0%, 50%, 90% {
-    opacity: 0;
-  }
-  99% {
-    visibility: visible;
-    opacity: 0.5;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
-} */
-
  /* ======================= TABLET MEDIA QUERY ========================= */
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .App {
     width: 90%;
     font-size: 22px;
@@ -122,7 +76,7 @@ img:hover {
 
 /* ======================= MOBILE MEDIA QUERY ========================= */
 
-@media only screen and (max-width: 640px) {
+@media (max-width: 640px) {
   br {
     display: block;
     margin: 2.5em;
@@ -144,18 +98,11 @@ img:hover {
     position: absolute;
     right: 0px;
   }
-
-  /* .dev-tools {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    font-size: 14px;
-  } */
 }
 
 /* ======================= TINY MOBILE SCREENS ============================ */ 
 
-@media only screen and (max-width: 320px) { 
+@media (max-width: 320px) { 
   .header {
     font-size: 60px;
   }
@@ -167,48 +114,60 @@ img:hover {
 
  /* =============================== BACKGROUND ANIMATION ==================== */
 
- body {
-	background: linear-gradient(-45deg, #70e1f5, #ffd194);
-	background-size: 200% 200%;
-	-webkit-animation: Gradient 12s ease;
-	-moz-animation: Gradient 12s ease;
-  animation: Gradient 12s ease;
-  animation-iteration-count: 5;
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position:fixed;
 }
 
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+.circle-first {
+  position: absolute;
+  top: -15vh;
+  right: -20vh;
+  border-radius: 50%;
+  width: 100vh;
+  height: 100vh;
+  background:  rgba(109, 176, 135, .2);
+  opacity: 0.7;
+  -webkit-animation: Moving 70s ease;
+	-moz-animation: Moving 70s ease;
+  animation: Moving 70s ease;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+.circle-second {
+  position: absolute;
+  top: 60vh;
+  right: 10vh;
+  z-index: 10;
+  border-radius: 50%;
+  width: 200vh;
+  height: 200vh;
+  background: rgba(241, 204, 112, .4);
+  opacity: 0.7;
+  -webkit-animation: MovingBottomCircle 70s ease;
+	-moz-animation: MovingBottomCircle 70s ease;
+  animation: MovingBottomCircle 70s ease;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+} 
+
+@keyframes Moving {
+   0%, 100% {
+    transform: translate(4%, -40vh);
+  }
+  50% {
+    transform: translate(10%, -10vh);
+  }  
 }
 
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+@keyframes MovingBottomCircle {
+   0%, 100% {
+    transform: translate(6%,  10vh);
+  }
+  50% {
+    transform: translate(20%,  -30vh);
+  }  
 }
-
