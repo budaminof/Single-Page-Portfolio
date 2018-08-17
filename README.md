@@ -10,11 +10,11 @@ To run this:
 
 `yarn start`
 
-Top deploy: 
+To deploy: 
 
 `yarn deploy`
 
-or :
+or:
 
 `firebase deploy`
 
